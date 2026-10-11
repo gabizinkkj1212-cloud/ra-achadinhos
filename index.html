@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RA Achadinhos | Seu próximo achado está aqui.</title>
+    <meta name="description" content="Descubra produtos, compare opções e encontre ofertas selecionadas para facilitar suas compras." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./" class="brand" aria-label="RA Achadinhos - início">
+          <span class="brand-mark">RA</span>
+          <span class="brand-text">Achadinhos</span>
+        </a>
+
+        <div class="header-search">
+          <input type="search" id="headerSearch" placeholder="Buscar produtos, marcas ou categorias" aria-label="Buscar produtos" />
+          <button id="headerSearchBtn" class="button button--primary">Buscar</button>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="./">Home</a>
+          <a href="./ofertas.html">Ofertas</a>
+          <a href="./categorias.html">Categorias</a>
+          <a href="./favoritos.html">Favoritos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Descubra ofertas inteligentes</span>
+            <h1>Encontre seu próximo achado.</h1>
+            <p>Descubra produtos, compare opções e encontre ofertas selecionadas para facilitar suas compras.</p>
+            <div class="search-panel">
+              <input type="search" id="heroSearch" placeholder="Ex.: teclado sem fio, mochila, beleza" aria-label="Buscar ofertas" />
+              <button class="button button--primary" onclick="goToOffers()">Explorar ofertas</button>
+            </div>
+            <div class="popular-searches">
+              <span>Populares:</span>
+              <a href="./ofertas.html?q=teclado sem fio">Teclado sem fio</a>
+              <a href="./ofertas.html?q=acessorios">Acessórios</a>
+              <a href="./ofertas.html?q=beleza">Beleza</a>
+            </div>
+          </div>
+
+          <aside class="promo-card" aria-label="Campanhas em destaque">
+            <span class="tag">Campanha ativa</span>
+            <h2>Seleções do mês</h2>
+            <p>Produtos em destaque com preços revisados e escolha inteligente.</p>
+            <a href="./ofertas.html" class="button button--secondary">Ver ofertas</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="categories-strip">
+        <div class="container">
+          <div class="section-header">
+            <h2>Categorias</h2>
+            <a href="./categorias.html">Ver todas</a>
+          </div>
+          <div class="category-list" id="categoryList"></div>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Ofertas em destaque</h2>
+            <a href="./ofertas.html">Ver todas as ofertas</a>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>RA Achadinhos</h3>
+          <p>Seu próximo achado está aqui.</p>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./privacidade.html">Privacidade</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Loja</h4>
+          <ul>
+            <li><a href="./ofertas.html">Ofertas</a></li>
+            <li><a href="./categorias.html">Categorias</a></li>
+            <li><a href="./favoritos.html">Favoritos</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./data.js"></script>
+    <script src="./utils.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
