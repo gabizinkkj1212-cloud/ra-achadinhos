@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorias | RA Achadinhos</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand"><span class="brand-mark">RA</span><span class="brand-text">Achadinhos</span></a>
+        <nav class="main-nav"><a href="/ofertas">Ofertas</a><a href="/favoritos">Favoritos</a></nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="section-header">
+          <h1>Categorias</h1>
+          <p>Explore as principais categorias do catálogo.</p>
+        </section>
+        <div class="category-list feature-grid" data-category-grid></div>
+        <div class="section-header top-spacing">
+          <h2>Produtos por categoria</h2>
+        </div>
+        <div class="product-grid" data-category-products></div>
+      </div>
+    </main>
+
+    <script type="module" src="/js/categories.js"></script>
+  </body>
+</html>

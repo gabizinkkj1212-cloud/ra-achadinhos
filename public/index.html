@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RA Achadinhos | Seu próximo achado está aqui.</title>
+    <meta name="description" content="Descubra produtos, compare opções e encontre ofertas selecionadas para facilitar suas compras." />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand" aria-label="RA Achadinhos - início">
+          <span class="brand-mark">RA</span>
+          <span class="brand-text">Achadinhos</span>
+        </a>
+
+        <div class="header-search">
+          <input type="search" data-search-input placeholder="Buscar produtos, marcas ou categorias" aria-label="Buscar produtos" />
+          <button data-search-button class="button button--primary">Buscar</button>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="/categorias">Categorias</a>
+          <a href="/ofertas">Ofertas</a>
+          <a href="/favoritos">Favoritos</a>
+          <a href="/sobre">Sobre</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Descubra ofertas inteligentes</span>
+            <h1>Encontre seu próximo achado.</h1>
+            <p>Descubra produtos, compare opções e encontre ofertas selecionadas para facilitar suas compras.</p>
+            <div class="search-panel">
+              <input type="search" data-hero-search placeholder="Ex.: teclado sem fio, mochila, beleza" aria-label="Buscar ofertas" />
+              <button class="button button--primary">Explorar ofertas</button>
+            </div>
+            <div class="popular-searches">
+              <span>Populares:</span>
+              <a href="/ofertas?q=teclado sem fio">Teclado sem fio</a>
+              <a href="/ofertas?q=acessórios para celular">Acessórios</a>
+              <a href="/ofertas?q=beleza">Beleza</a>
+            </div>
+          </div>
+
+          <aside class="promo-card" aria-label="Campanhas em destaque">
+            <span class="tag">Campanha ativa</span>
+            <h2>Seleções do mês</h2>
+            <p>Produtos em destaque com preços revisados e escolha inteligente.</p>
+            <a href="/ofertas" class="button button--secondary">Ver ofertas</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="categories-strip">
+        <div class="container">
+          <div class="section-header">
+            <h2>Categorias</h2>
+            <a href="/categorias">Ver todas</a>
+          </div>
+          <div class="category-list" data-category-list></div>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Ofertas em destaque</h2>
+            <a href="/ofertas">Ver todas as ofertas</a>
+          </div>
+          <div class="product-grid" data-product-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>RA Achadinhos</h3>
+          <p>Seu próximo achado está aqui.</p>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/privacidade">Privacidade</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Loja</h4>
+          <ul>
+            <li><a href="/ofertas">Ofertas</a></li>
+            <li><a href="/categorias">Categorias</a></li>
+            <li><a href="/favoritos">Favoritos</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+@media (max-width: 900px) {
+  .header-inner,
+  .section-header,
+  .hero-grid,
+  .page-layout,
+  .product-detail,
+  .admin-layout {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .header-search {
+    max-width: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 42px;
+  }
+
+  .search-panel,
+  .product-detail__actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

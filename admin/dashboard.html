@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | RA Achadinhos</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <div class="admin-layout">
+        <aside class="admin-sidebar">
+          <h2>Admin</h2>
+          <nav>
+            <a href="/admin/dashboard.html">Visão geral</a>
+            <a href="/admin/products.html">Produtos</a>
+            <a href="/admin/offers.html">Ofertas</a>
+          </nav>
+        </aside>
+        <section class="admin-content">
+          <h1>Dashboard</h1>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <span>Total de produtos</span>
+              <strong id="totalProducts">0</strong>
+            </article>
+            <article class="stat-card">
+              <span>Cliques registrados</span>
+              <strong id="totalClicks">0</strong>
+            </article>
+            <article class="stat-card">
+              <span>Produtos publicados</span>
+              <strong id="publishedProducts">0</strong>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="/admin/js/dashboard.js"></script>
+  </body>
+</html>
