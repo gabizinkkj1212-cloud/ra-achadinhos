@@ -1,0 +1,13 @@
+# .gitignore
+
+node_modules/
+.env
+.env.local
+coverage/
+.DS_Store
+npm-debug.log*
+.vite/
+.tmp/
+.cache/
+logs/
+*.log
