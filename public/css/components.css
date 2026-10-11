@@ -1,0 +1,65 @@
+.category-feature {
+  display: block;
+  background: linear-gradient(135deg, rgba(233, 160, 168, 0.05), rgba(130, 60, 80, 0.05));
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 24px;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.category-feature:hover {
+  border-color: var(--color-wine);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.category-feature h3 {
+  color: var(--color-wine);
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.category-feature p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+.tag--muted {
+  background: rgba(113, 102, 106, 0.08);
+  color: var(--color-muted);
+}
+
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(130, 60, 80, 0.2);
+  border-top-color: var(--color-wine);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.product-card.compact {
+  max-width: 100%;
+}
+
+.product-card.compact img {
+  height: 160px;
+}
